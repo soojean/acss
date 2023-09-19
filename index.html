@@ -275,10 +275,9 @@
                                         <li> On the other hand, <strong>model-based control methods</strong> require little to almost no data or training, but can only be designed for simpler classes of stochastic systems, i.e., those whose behavior can be written as explicit equations.</li>
                                     </ul>
 
-                                    <p> <u>Description</u>: We present a modular framework for controlling such systems that is based on learning and taking advantage of these patterns.
-                                    More specifically, we identify recurrent patterns in the underlying stochastic process, then leverage two key functions: 1) memorize past patterns to prevent redundant computation of control policies, 2) predict the expected occurrence times of future patterns to schedule control policies in advance. </p>
+                                    <p> We identify and use patterns to develop autonomous control/estimation algorithms that are more efficient in data consumption and computation time. </p>
 
-                                    <p> Representative work(s): </p>
+                                    <p> Related work(s): </p>
                                     <ul>
                                         <li> SooJean Han, Soon-Jo Chung, John C. Doyle, "Predictive Control of Linear Discrete-Time Markovian Jump Systems by Learning Recurrent Patterns." Automatica, 2023.</li>
                                     </ul> 
@@ -327,7 +326,6 @@
                                     <p>
                                         We study and extend reinforcement learning methods by learning patterns in vehicle traffic congestion control.
                                         Intuitively, spatial symmetries arise from the rectangular, grid-like structure of the network, while temporal symmetries arise from both the structure and from human routines, e.g., commute times.
-                                        <!-- At present, the state-of-the-art methods to achieve both qualities involve <i>reinforcement learning</i> with a component of <i>memory</i>, i.e., experience replay, episodic control, etc. -->
                                         We develop an extension of <i>episodic control</i> that builds equivalence classes to group together patterns which are considered "similar" to each other, hereby saving memory consumption.
                                         Although the specific application of focus so far has been on traffic congestion control, our goal is to develop this framework to be able to be used in other similar network control applications which can be solved using reinforcement learning methods.
                                     </p>
@@ -371,14 +369,18 @@
                                 </div>
                                 
                                 <div class="content" align="left">
+                                    <center>
+                                        <img class="img-fluid d-block mx-auto" src="./assets/img/research/topology.png" alt="..." />
+                                    </center>
+
                                     <p>
-                                        One existing example of topology-abstraction is in aircraft piloting, where wind-optimal trajectories are computed by partitioning the continuous airspace into a discrete graph, along which flight trajectories are computed.
+                                        <!-- One existing example of topology-abstraction is in aircraft piloting, where wind-optimal trajectories are computed by partitioning the continuous airspace into a discrete graph, along which flight trajectories are computed. -->
                                         The goal is to achieve more intelligent network control, including faster communication, more optimal resource allocation, etc. 
                                         Our approach is motivated by the fact that patterns and simple structures have properties that can be mathematically analyzed. 
                                         For example, closed-form expressions for quantities (e.g., average hitting time, mean minimum commute time) can be derived for random walks over specific graph topologies (e.g., tree, star, ring, etc.). 
                                         <!-- Recently, in machine learning, group theory has been used to develop equivariant and invariant architectures for neural networks. -->
                                         Applications include the control of large-scale flow networks, where the goal is to maintain low congestion and high throughput. 
-                                        We are particularly interested in air traffic management and formation-flight of UAVs. 
+                                        We are particularly interested in vehicle congestion control, air traffic management, and formation-flight of UAVs.
                                     </p>
                                 </div>
                                     
@@ -415,14 +417,9 @@
                                 
                                 <div class="content" align="left">
                                     <p>
-                                        In the current deep reinforcement learning literature, one common method of including memory is the implementation of experience replay buffers. 
-                                        Another method is neural episodic control, which implements a differentiable neural dictionary to store past experiences and rewards.
-                                        However, many of these approaches in the literature encode their memories using simple structures, e.g., hash tables that directly map state-action pairs to their corresponding reward values. This means every new experience encountered in the environment is stored as a new entry in the memory table, potentially leading to large memory consumption.
-                                    </p>
-
-                                    <p>
-                                        By studying the patterns of a system, we develop smarter rules for determining what to store in memory, as well as when and how to store them. We design novel memory structures that encode information in a diversity of ways, taking inspiration from the human brain (e.g., semantic versus episodic memory types). 
-                                        We implement these memory structures into autonomous decision-making algorithms for robotic systems. 
+                                        Some common methods of implementing memory for control include experience replay buffers (in reinforcement learning/RL), and neural episodic control. However, many methods build their memories using simple structures, e.g., hash tables. This means each new experience is stored as a new entry, potentially leading to large memory consumption.
+                                        We study the patterns of a system, then develop smarter rules for determining what to store in memory and how to store them. By taking inspiration from the human brain, we design heterogeneous memory structures that encode information in a diversity of ways (e.g., semantic versus episodic memory). 
+                                        Applications include autonomous decision-making algorithms for robotic systems and other reinforcement learning problems. 
                                     </p>
                                 </div>
                                     
@@ -459,21 +456,16 @@
                                 
                                 <div class="content" align="left">
                                     <p> 
+                                        Conventional architectures for distributed data-gathering tend to rely on the external sensors to transmit all their observations to the processor, including redundant information. 
+                                        This causes problems with high bandwidth consumption, congestion, latency, and outdated data. 
+                                        We take inspiration from the human nervous system to improve these algorithms: predictions are computed and fed back to the individual sensors. 
+                                        Each sensor now only needs to transmit the unknown part of their recent observations back to the processor.
                                         Efficient wireless communication and information-gathering strategies are relevant for applications where multiple rovers and aerial drones must perform environment surveillance, mapping, and target-tracking over the surface of unknown planet terrains.
-                                        However, conventional architectures[LEFT FIGURE] for distributed data-gathering tends to rely on the external sensors to transmit all their observations to the processor, including redundant information.
-                                        This causes problems with high bandwidth consumption, congestion, latency, and outdated data being incorrectly used.
                                     </p>
 
-                                    <p>
-                                        The goal is to perform collaborative data-gathering with less-redundant coverage.
-                                        We take inspiration from the human nervous system: it turns out that the percentage of feedback connections transmitting data from the brain to the biological sensors (e.g., eyes, ears) is much larger than the feedforward connections.” [CENTER FIGURE]
-                                    </p>
-
-                                    <p>
-                                        Inspired by this, we can improve distributed data-gathering algorithms in robot or cyberphysical sensor networks.
-                                        We can enable the central processor to broadcast predictions based on past sensor observations it received [RIGHT FIGURE]. 
-                                        This way, sensors only need to transmit the unknown part of their recent observations back to the processor, therby reducing redundancy and bandwidth consumption.
-                                    </p>
+                                    <center>
+                                        <img class="img-fluid d-block mx-auto" src="./assets/img/research/mars_rovers.png" alt="..." />
+                                    </center>
 
                                     <p> Representative work(s): </p>
                                     <ul>
@@ -509,7 +501,7 @@
                     </div>
 
                     <div class="col-lg-4 text-lg-end">
-                        Last updated: Aug 27, 2023. 
+                        Last updated: Sep 19, 2023. 
                     </div>
                 </div>
             </div>
