@@ -7,42 +7,6 @@
 // Scripts
 // 
 
-// function toggleLanguage(language) {
-//     let description = document.getElementById("description");
-//     if (language === "Korean") {
-//       description.innerHTML = "Show Korean Text";
-//     }
-//     else {
-//       description.innerHTML = "Show English Text";
-//     }
-// }
-const btn = document.getElementById('btn1');
-var project_title_eng = document.getElementById('project1_title_eng')
-var project_content_eng = document.getElementById('project1_content_eng')
-var project_title_kor = document.getElementById('project1_title_kor')
-var project_content_kor = document.getElementById('project1_content_kor')
-
-var displaySetting_title = project_title_eng.style.display;
-var displaySetting_content = project_content_eng.style.display;
-
-btn.addEventListener('click', function handleClick() {
-  const initialText = 'English';
-
-  if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
-    btn.textContent = '한국어';
-    project_title_eng.style.display = 'none';
-    project_content_eng.style.display = 'none';
-    project_title_kor.style.display = displaySetting_title;
-    project_content_kor.style.display = displaySetting_content;
-  } else {
-    btn.textContent = initialText;
-    project_title_eng.style.display = displaySetting_title;
-    project_content_eng.style.display = displaySetting_content;
-    project_title_kor.style.display = 'none';
-    project_content_kor.style.display = 'none';
-  }
-});
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function

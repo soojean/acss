@@ -112,9 +112,9 @@ hr {
   opacity: 0.25;
 }
 
-h7, .h7, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
@@ -140,24 +140,10 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
-  margin: 0;
-  padding: 0;
 }
-
-h7, .h7, {
-  font-size: calc(1.3rem + 0.6vw);
-  margin: 100;
-  padding: 5rem;
-}
-
 @media (min-width: 1200px) {
   h3, .h3 {
     font-size: 1.75rem;
-  }
-  h7, .h7 {
-    font-size: 1.75rem;
-    padding-bottom: 3rem!important;
-    margin-bottom: 100!important;
   }
 }
 
@@ -182,73 +168,6 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
- /* Dropdown Button */
-.dropbtn {
-  background-color: #67acd0;
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  position: absolute;
-  top: 0rem;
-  left: 3rem;
-  cursor: pointer;
-}
-
-.button-li {
-  display: inline-block;
-  position: relative;
-  top: 0rem;
-  left: 3rem;
-  cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-/*  position: relative;*/
-  position: relative;
-  top: 0rem;
-  left: 3rem;
-  cursor: pointer;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-/*  position: relative;*/
-  position: relative;
-  top: 0rem;
-  left: 3rem;
-  cursor: pointer;
-  background-color: #f1f1f1;
-  min-width: 100px;
-  padding: 0px;
-  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  top: 0rem;
-  left: 3rem;
-  cursor: pointer;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: inline-block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #4782a1;} 
 
 abbr[title] {
   -webkit-text-decoration: underline dotted;
@@ -2936,7 +2855,7 @@ textarea.form-control-lg {
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #c9fffb;
   --bs-btn-active-border-color: #4782a1;
-  --bs-btn-active-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.125);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #67acd0;
   --bs-btn-disabled-border-color: #67acd0;
@@ -2944,19 +2863,19 @@ textarea.form-control-lg {
 
 .btn-secondary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #a6c2da;
-  --bs-btn-border-color: #a6c2da;
+  --bs-btn-bg: #6c757d;
+  --bs-btn-border-color: #6c757d;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #96adbf;
-  --bs-btn-hover-border-color: #96adbf;
+  --bs-btn-hover-bg: #5c636a;
+  --bs-btn-hover-border-color: #565e64;
   --bs-btn-focus-shadow-rgb: 130, 138, 145;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #96adbf;
+  --bs-btn-active-bg: #565e64;
   --bs-btn-active-border-color: #51585e;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #a6c2da;
-  --bs-btn-disabled-border-color: #a6c2da;
+  --bs-btn-disabled-bg: #6c757d;
+  --bs-btn-disabled-border-color: #6c757d;
 }
 
 .btn-success {
@@ -5377,7 +5296,7 @@ textarea.form-control-lg {
   max-height: 100%;
   overflow: hidden;
 }
-.modal-dialog-scrollable .modal-body .modal-body-eng .modal-body-kor {
+.modal-dialog-scrollable .modal-body {
 /*  overflow-y: auto;*/
   padding: 0;
   align-items: flex-start;
@@ -5442,9 +5361,8 @@ textarea.form-control-lg {
   line-height: var(--bs-modal-title-line-height);
 }
 
-.modal-body .modal-body-eng .modal-body-kor {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+.modal-body {
+  padding: 0;
   align-items: flex-start;
 /*  position: relative;*/
 /*  flex: 1 1 auto;*/
@@ -5507,7 +5425,7 @@ textarea.form-control-lg {
 .modal-fullscreen .modal-footer {
   border-radius: 0;
 }
-.modal-fullscreen .modal-body .modal-body-eng .modal-body-kor {
+.modal-fullscreen .modal-body {
 /*  overflow-y: auto;*/
   padding: 0;
   align-items: flex-start;
@@ -5529,7 +5447,7 @@ textarea.form-control-lg {
   .modal-fullscreen-sm-down .modal-footer {
     border-radius: 0;
   }
-  .modal-fullscreen-sm-down .modal-body .modal-body-eng .modal-body-kor {
+  .modal-fullscreen-sm-down .modal-body {
 /*    overflow-y: auto;*/
   padding: 0;
   align-items: flex-start;
@@ -5551,7 +5469,7 @@ textarea.form-control-lg {
   .modal-fullscreen-md-down .modal-footer {
     border-radius: 0;
   }
-  .modal-fullscreen-md-down .modal-body .modal-body-eng .modal-body-kor {
+  .modal-fullscreen-md-down .modal-body {
 /*    overflow-y: auto;*/
   padding: 0;
   align-items: flex-start;
@@ -5573,7 +5491,7 @@ textarea.form-control-lg {
   .modal-fullscreen-lg-down .modal-footer {
     border-radius: 0;
   }
-  .modal-fullscreen-lg-down .modal-body .modal-body-eng .modal-body-kor {
+  .modal-fullscreen-lg-down .modal-body {
 /*    overflow-y: auto;*/
   padding: 0;
   align-items: flex-start;
@@ -5595,7 +5513,7 @@ textarea.form-control-lg {
   .modal-fullscreen-xl-down .modal-footer {
     border-radius: 0;
   }
-  .modal-fullscreen-xl-down .modal-body .modal-body-eng .modal-body-kor {
+  .modal-fullscreen-xl-down .modal-body {
 /*    overflow-y: auto;*/
   padding: 0;
   align-items: flex-start;
@@ -5617,7 +5535,7 @@ textarea.form-control-lg {
   .modal-fullscreen-xxl-down .modal-footer {
     border-radius: 0;
   }
-  .modal-fullscreen-xxl-down .modal-body .modal-body-eng .modal-body-kor {
+  .modal-fullscreen-xxl-down .modal-body {
 /*    overflow-y: auto;*/
   padding: 0;
   align-items: flex-start;
@@ -10941,14 +10859,14 @@ p {
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
   margin-top: 0;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 1.3rem;
   font-weight: 400;
   font-style: normal;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 768px) {
