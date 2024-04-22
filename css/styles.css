@@ -114,7 +114,7 @@ hr {
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
@@ -160,10 +160,13 @@ h4, .h4 {
 h5, .h5 {
   margin-top: 1rem;
   font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 h6, .h6 {
+  margin-top: 1rem;
   font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -203,6 +206,7 @@ ol ul,
 ul ol {
   margin-bottom: 0;
 }
+
 
 dt {
   font-weight: 700;
@@ -8285,6 +8289,18 @@ textarea.form-control-lg {
   border-radius: 50% !important;
 }
 
+.rounded-circle-alt {
+    /*background: url(http://placehold.it/50x50);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50% !important;
+    width:200px !important;
+    height:200px !important;
+}
+
 .rounded-pill {
   border-radius: var(--bs-border-radius-pill) !important;
 }
@@ -10868,7 +10884,7 @@ p {
   font-weight: 400;
   font-style: normal;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
