@@ -49,13 +49,30 @@
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Goal | 목적</h2>
-                    <h3 class="section-subheading text-muted">We develop intelligent and efficient methods for control, estimation, and decision-making of stochastic systems.
-                    Our main applications include networked systems: traffic management of unmanned (aerial) vehicles, multi-agent robotics, and distributed sensor networks.<br/>
-                    ~~~~~~~~~~~~~~~~~~~~~<br/>
+                    <h2 class="section-heading text-uppercase">Overview | 요약</h2>
+                    <p class="text-muted">
+                    <i>Stochastic processes</i> and <i>stochastic dynamical systems</i> are widely used in many fields to model real-world systems affected by <u>random phenomena</u> (e.g., inherent uncertainties, external disturbances, measurement noise).
+                    Optimal control and estimation in the presence of these random phenomena pose many unique challenges that are absent from deterministic systems.
+                    Thus, <i>stochastic systems</i> remains a topic of high interest in the engineering community.
+                    </p>
+
+                    <p class="text-muted">
+                    Recently, <i>artificial intelligence (AI)</i> has been immensely useful in the development of tools for stochastic control and estimation, including data-driven control policies and black-box modeling of highly complex dynamics.
+                    However, two well-known issues with AI-based methods (specifically, <u>model-free methods</u>) are its reliance on the availability of good-quality data and lengthy training time. 
+                    While <u>model-based methods</u>, on the other hand, do not suffer from these issues, they often only work for systems under simple or restrictive assumptions, e.g., Gaussian white noise.
+                    This suggests that examining the tradeoff between model-free and model-based methods gives to us a wide spectrum of methods for handling stochastic systems.
+                    </p>
+
+                    <h3 class="section-heading text-uppercase" style="margin-top:1cm;margin-bottom:0.5cm;">Our Goal | 목적</h3>
+                    <h3 class="section-subheading"> We develop intelligent methods for stochastic control, estimation, and decision-making based on efficient learning.
+                    Our research spans a broad range of applications, including traffic management of unmanned (aerial) vehicles, path-planning, robotic systems and reinforcement learning, and distributed sensor networks.</h3>
+
+                    <h3 class="section-subheading text-muted"> See our individual projects for more.</h3>
+
+                    <!-- <br/>~~~~~~~~~~~~~~~~~~~~~<br/>
                     우리 연구실은 확률론적 시스템을 지능적이고 효율적인 여러가지 자동제어 방법을 개발하고 있습니다.
                     개발하는 이론와 알고리즘은 여러가지 응용분야가 있습니다: 그중에서는 내트워크 시스템의 분산제어, 자율 자동차 교통 관리 (예: 차, 무인 항공기, UAV), 그리고 분산 무선 통신이 있습니다.
-                    </h3>
+                    </h3> -->
                     <!-- <h4 class="section-subheading text-muted"> [Fall 2023]: Our lab is open to prospective students. If you are interested in joining, please email the professor at <a href="mailto:soojean@kaist.ac.kr">soojean@kaist.ac.kr</a>
                     </h4> -->
                     <!-- <h4 class="section-subheading text-muted"> [가을학기 2023]: 우리 연구실은 예비 박사/석사/학부생들에게 열려 있습니다. 관심있는 학생들은 이메일을 보내주세요: <a href="mailto:soojean@kaist.ac.kr">soojean@kaist.ac.kr</a>
@@ -73,9 +90,27 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Project 1-->
+                        <!-- Project: UAVPathPlan -->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal-UAVPathPlan">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="./assets/img/research/uav_mgmt.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <center>
+                                    <div class="portfolio-caption-heading">Fault-Tolerant Routing in Dynamic Environments</div>
+                                    <!-- <div class="portfolio-caption-subheading text-muted">based on Learning Patterns</div> -->
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Project: PLMP -->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal-PLMP">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -91,9 +126,9 @@
                     </div>
 
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Project 2-->
+                        <!-- Project -->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal-TrafficMgmt">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -110,9 +145,9 @@
 
 
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Project 3-->
+                        <!-- Project -->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal-Tessellation">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -129,9 +164,9 @@
 
 
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Project 4-->
+                        <!-- Project -->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal-HetMemory">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -148,9 +183,9 @@
 
 
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Project 5-->
+                        <!-- Project -->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolio-FDDG">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -178,22 +213,22 @@
                 </div>
                 <div class="blurb">
                     <ol>
-                        <li> SooJean Han, Minwoo Kim, Ieun Choo, "A Stochastic Robust Adaptive Systems Level Approach to Stabilizing Large-Scale Uncertain Markovian Jump Linear Systems." Under review, IEEE Conference on Decision and Control (CDC), Mar 2024.
+                        <li> SooJean Han, Minwoo Kim, Ieun Choo, "<i>A Stochastic Robust Adaptive Systems Level Approach to Stabilizing Large-Scale Uncertain Markovian Jump Linear Systems.</i>" Under review, IEEE Conference on Decision and Control (CDC), Mar 2024.
                         </li>
 
-                        <li> Mukul Chodhary, Kevin Octavian, SooJean Han, "Efficient Replay Memory Architectures in Multi-Agent Reinforcement Learning for Network Congestion Control." Under review, International Conference on Machine Learning (ICML), Feb 2024.
+                        <li> Mukul Chodhary, Kevin Octavian, SooJean Han, "<i>Efficient Replay Memory Architectures in Multi-Agent Reinforcement Learning for Network Congestion Control.</i>" Under review, International Conference on Machine Learning (ICML), Feb 2024.
                         </li>
 
-                        <li> SooJean Han, Soon-Jo Chung, John C. Doyle, "Predictive Control of Linear Discrete-Time Markovian Jump Systems by Learning Recurrent Patterns." Automatica, May 2023. [<a href="https://www.sciencedirect.com/science/article/pii/S0005109823003588?dgcid=author">Link</a>] [<a href="https://arxiv.org/pdf/2305.05587.pdf">PDF</a>]
+                        <li> SooJean Han, Soon-Jo Chung, John C. Doyle, "<i>Predictive Control of Linear Discrete-Time Markovian Jump Systems by Learning Recurrent Patterns.</i>" Automatica, May 2023. [<a href="https://www.sciencedirect.com/science/article/pii/S0005109823003588?dgcid=author">Link</a>] [<a href="https://arxiv.org/pdf/2305.05587.pdf">PDF</a>]
                         </li>
 
-                        <li> SooJean Han, Soon-Jo Chung, "Incremental Nonlinear Stability Analysis for Stochastic Systems Perturbed by L&eacute;vy Noise." International Journal of Robust and Nonlinear Control, vol. 32, no. 12, p. 7174-7201, Aug 2022. [<a href="https://onlinelibrary.wiley.com/doi/10.1002/rnc.6216">Link</a>] [<a href="https://arxiv.org/pdf/2103.13338.pdf">PDF</a>]
+                        <li> SooJean Han, Soon-Jo Chung, "<i>Incremental Nonlinear Stability Analysis for Stochastic Systems Perturbed by L&eacute;vy Noise.</i>" International Journal of Robust and Nonlinear Control, vol. 32, no. 12, p. 7174-7201, Aug 2022. [<a href="https://onlinelibrary.wiley.com/doi/10.1002/rnc.6216">Link</a>] [<a href="https://arxiv.org/pdf/2103.13338.pdf">PDF</a>]
                         </li>
 
-                        <li> SooJean Han, Michelle Effros, Richard Murray, "OUTformation: Distributed Data Gathering with Feedback under Unknown Environment and Communication Delay Constraints." ArXiv, Aug 2022. [<a href="https://arxiv.org/pdf/2208.06395.pdf">PDF</a>]
+                        <li> SooJean Han, Michelle Effros, Richard Murray, "<i>OUTformation: Distributed Data Gathering with Feedback under Unknown Environment and Communication Delay Constraints.</i>" ArXiv, Aug 2022. [<a href="https://arxiv.org/pdf/2208.06395.pdf">PDF</a>]
                         </li>
 
-                        <li> SooJean Han, "Localized Learning of Robust Controllers for Networked Systems with Dynamic Topology." Learning for Dynamics and Control Conference (L4DC), Jun 2020. [<a href="http://proceedings.mlr.press/v120/han20a/han20a.pdf">PDF</a>] </li>
+                        <li> SooJean Han, "<i>Localized Learning of Robust Controllers for Networked Systems with Dynamic Topology.</i>" Learning for Dynamics and Control Conference (L4DC), Jun 2020. [<a href="http://proceedings.mlr.press/v120/han20a/han20a.pdf">PDF</a>] </li>
 
                         <!-- <li> Shih-Hao Tseng, <b>SooJean Han</b>, Adam Wierman, "Trading Throughput for Freshness: Freshness-Aware Traffic Engineering and In-Network Freshness Control." ACM Transactions on Modeling and Performance Evaluation of Computing Systems (ToMPECS), vol. 8, no. 4, p. 1-26, Mar 2023. [<a href="https://dl.acm.org/doi/abs/10.1145/3576919">PDF</a>]
                         </li> -->
@@ -366,8 +401,60 @@
 
 
         <!-- RESEARCH PROJECT POP-UP MODALS-->
-        <!-- Project 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Project: UAVPathPlan modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal-UAVPathPlan" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="./assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">Fault-Tolerant Routing in Complex Environments</h3>
+
+                                    <!-- <p class="item-intro text-muted"> <u>Main Idea</u>: With the rise in popularity of UAVs as a means of algorithms for robust and adaptive planning are becoming important.
+                                    </p> -->
+
+                                    <center>
+                                        <video width="500" controls autoplay loop>
+                                          <source src="./assets/img/research/path_planning.mp4" type="video/mp4">
+                                          Your browser does not support this video.
+                                        </video> 
+
+                                        <img class="img-fluid d-block mx-auto" src="./assets/img/research/dronefaulttol.png" alt="..." />
+                                    </center>
+                                </div>
+                                
+                                <div class="content" align="left">
+                                    <p>
+                                        We build a class of algorithms for hybrid UAV traffic, with special focus on minimum-curvature routing (see video above), congestion relief, multimodal transportation, and path-planning in complex environments.
+                                        Key applications include human transportation services (e.g., taxis, Ubers, flying ambulances) and remote package deliveries, where fast and efficient trajectory planning, robustness to nonstationary environments, and the ability to traverse harder-to-reach areas (e.g., mountains) are crucial.
+                                    </p>
+
+                                    <!-- <p style="margin-bottom:0.5cm;"> <u>Representative work(s):</u></p>
+                                    <ul>
+                                      <li> SooJean Han, Soon-Jo Chung, Johanna Gustafson, "Congestion Control of Vehicle Traffic Networks by Learning Structural and Temporal Patterns." L4DC, 2023</li>
+                                    </ul> -->
+                                </div>
+                                    
+                                <div class="modal-body">
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Project: PLMP modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal-PLMP" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="./assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -378,25 +465,36 @@
                                 <div class="modal-body">
                                     <h3 class="text-uppercase">Controller Architectures based on Learning Patterns</h3>
                                     
-                                    <p class="item-intro text-muted"><u>Main Idea</u>: Identifying and using patterns in intelligent autonomous systems can make control and estimation algorithms more efficient in data consumption and computation time.</p>
+                                    <p class="item-intro text-muted"><u>Main Idea</u>: Identifying and using patterns in systems can enable a combination of model-based and model-free methods for decision-making which are more efficient in data consumption and computation time.</p>
                                     
                                     <img class="img-fluid d-block mx-auto" src="./assets/img/research/plp_plmp.png" alt="..." />
                                 </div>
                                 
                                 <div class="content" align="left">
-                                    <p>A large part of achieving this goal requires us to understand the tradeoff between model-free (data-driven) and model-based methods.</p>
+                                    <p style="margin-bottom:0.5cm;">We study and improve the tradeoff between model-free (data-driven) methods and model-based methods of stochastic control and estimation.</p>
 
                                     <ul>
-                                        <li> On one hand, it is feasible to rely entirely on <strong>model-free control methods</strong> for controlling complex stochastic systems, but a well-known issue with these methods is their intensive data consumption and training time.</li>
+                                        <li> <strong>Model-free control methods</strong> can generalize better to a variety of complex stochastic systems (e.g., via neural networks), at the cost of intensive data consumption and training time.</li>
 
-                                        <li> On the other hand, <strong>model-based control methods</strong> require little to almost no data or training, but can only be designed for simpler classes of stochastic systems, i.e., those whose behavior can be written as explicit equations.</li>
+                                        <li> <strong>Model-based control methods</strong> may require less data and training (due to being characterized by explicit models), at the cost of being reliant on simplifying assumptions.</li>
                                     </ul>
 
-                                    <p> We identify and use patterns to develop autonomous control/estimation algorithms that are more efficient in data consumption and computation time. </p>
+                                    <p> For example, stochastic model-based controllers typically assume the random process can be modeled using Gaussian distributions, and Gaussian white noise models, such as linear quadratic Gaussian (LQG) control and Kalman filtering, have been shown to work well in practice for many applications.
+                                    However, they cannot be used to model impulsive jump perturbations such as wind gusts, large proprioceptive errors, sudden path deviations due to obstacle collisions, etc.
+                                    While model-free methods could be used to learn the jump dynamics as a black box, a more efficient process would be to try Poisson and L&eacute;vy processes as candidate models, and augment from there.
+                                    </p>
 
-                                    <p> Related work(s): </p>
+                                    <center>
+                                        <img width="500" class="img-fluid d-block mx-auto" src="./assets/img/research/jump_examples.png" alt="..." />
+                                    </center>
+
+                                    <p> Motivated by this, we identify and use patterns to develop autonomous control and estimation algorithms that are more efficient in data consumption and computation time. </p>
+
+                                    <p style="margin-bottom:0.5cm;"> <u>Representative work(s):</u></p>
                                     <ul>
                                         <li> SooJean Han, Soon-Jo Chung, John C. Doyle, "Predictive Control of Linear Discrete-Time Markovian Jump Systems by Learning Recurrent Patterns." Automatica, 2023.</li>
+
+                                        <li> SooJean Han, Soon-Jo Chung, "Incremental Nonlinear Stability Analysis for Stochastic Systems Perturbed by L&eacute;vy Noise." International Journal of Robust and Nonlinear Control, 2022.</li>
                                     </ul> 
                                 </div>
                                     
@@ -416,7 +514,7 @@
 
 
         <!-- Project 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="portfolioModal-TrafficMgmt" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="./assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -447,9 +545,11 @@
                                         Although the specific application of focus so far has been on traffic congestion control, our goal is to develop this framework to be able to be used in other similar network control applications which can be solved using reinforcement learning methods.
                                     </p>
 
-                                    <p> Representative work(s): </p>
+                                    <p style="margin-bottom:0.5cm;"> <u>Representative work(s):</u></p>
                                     <ul>
                                       <li> SooJean Han, Soon-Jo Chung, Johanna Gustafson, "Congestion Control of Vehicle Traffic Networks by Learning Structural and Temporal Patterns." L4DC, 2023</li>
+
+                                      <li> Mukul Chodhary, Kevin Octavian, SooJean Han, "Efficient Replay Memory Architectures in Multi-Agent Reinforcement Learning for Network Congestion Control." Under review ICML, Feb 2024.</li>
                                     </ul> 
                                 </div>
                                     
@@ -469,7 +569,7 @@
 
 
         <!-- Project 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="portfolioModal-Tessellation" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="./assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -516,7 +616,7 @@
 
 
         <!-- Project 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="portfolioModal-HetMemory" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="./assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -555,7 +655,7 @@
 
 
         <!-- Project 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="portfolio-FDDG" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="./assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -581,13 +681,15 @@
                                     </p>
 
                                     <center>
-                                        <img class="img-fluid d-block mx-auto" src="./assets/img/research/mars_rovers.png" alt="..." />
+                                        <img class="img-fluid d-block mx-auto" src="./assets/img/research/feedback_mars.png" alt="..." />
+
+                                        <img class="img-fluid d-block mx-auto" src="./assets/img/research/feedback_traffic.png" alt="..." />
                                     </center>
 
-                                    <p> Representative work(s): </p>
+                                    <!-- <p style="margin-bottom:0.5cm;"> <u>Representative work(s):</u></p>
                                     <ul>
                                       <li> SooJean Han, "Optimizing Accuracy and Efficiency in Distributed Data Gathering Architectures with Feedback." ArXiv, 2022.</li>
-                                    </ul> 
+                                    </ul>  -->
                                 </div>
                                     
                                 <div class="modal-body">
@@ -618,7 +720,7 @@
                     </div>
 
                     <div class="col-lg-4 text-lg-end">
-                        Last updated: Apr 2024. 
+                        Last updated: May 1, 2024. 
                     </div>
                 </div>
             </div>
