@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Autonomous Control for Stochastic Systems</title>
+        <title>KAIST ACSS</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="./assets/kaist.ico" />
+        <link rel="icon" type="image/x-icon" href="./assets/acss_ico.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -39,11 +39,15 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome to the</div>
-                <div class="masthead-heading text-uppercase">Autonomous Control for Stochastic Systems Lab</div>
+                <div class="masthead-heading text-uppercase" style="margin-bottom:.5cm;">Welcome to the</div>
+                <img class="img-fluid d-block mx-auto" width="800" src="./assets/acss_logo.png" alt="..." />
+                <!-- <div class="masthead-heading text-uppercase">Autonomous Control for Stochastic Systems Lab</div> -->
+                <div class="masthead-heading text-uppercase" style="margin-bottom:2cm;">Research Lab</div>
                 <a class="btn btn-primary btn-xl text-uppercase" href="#about">About Us</a>
             </div>
         </header>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 
         <!-- About-->
         <section class="page-section" id="about">
@@ -64,8 +68,9 @@
                     </p>
 
                     <h3 class="section-heading text-uppercase" style="margin-top:1cm;margin-bottom:0.5cm;">Our Goal | 목적</h3>
-                    <h3 class="section-subheading"> We develop intelligent methods for stochastic control, estimation, and decision-making based on efficient learning.
-                    Our research spans a broad range of applications, including traffic management of unmanned (aerial) vehicles, path-planning, robotic systems and reinforcement learning, and distributed sensor networks.</h3>
+                    <h3 class="section-subheading"> We develop theory and algorithms for <u>stochastic control</u>, <u>filtering & estimation</u>, and <u>autonomous decision-making</u> by combining traditional model-based methods with modern data-driven AI methods.
+                    <br>
+                    Our research spans a broad range of applications, including motion-planning, fault-tolerance, robotics, reinforcement learning, multi-agent systems, sensor networks, and embodied AI.</h3>
 
                     <h3 class="section-subheading text-muted"> See our individual projects for more.</h3>
 
@@ -81,63 +86,61 @@
             </div>
         </section>
 
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+
         <!-- Research -->
         <section class="page-section bg-light" id="research">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Research | 연구</h2>
-                    <h3 class="section-subheading text-muted"> Click on each + to view the project in detail. | 해당 프로젝트에 각 + 를 누르면 자세히 보기 가능. </h3>
+                    <h3 class="section-subheading text-muted" style="margin-bottom:50px"> The research undertaken by ACSS is roughly distinguished by 3 major overlapping categories.<br> Click on each + to view the projects within each category.</h3>
+                    <!-- <h3 class="section-subheading text-muted"> ACSS에서 수행한 연구는 대략 세 가지 주요 중복되는 카테고리로 구분됩니다. <br> 각 + 기호를 클릭하면 각 카테고리 내 프로젝트를 볼 수 있습니다. </h3> -->
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Project: UAVPathPlan -->
+                        <!-- Project: MAJOR CATEGORY 1 -->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal-UAVPathPlan">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal-MainAutoCtrl">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="./assets/img/research/uav_mgmt.png" alt="..." />
+                                <div class="research-hover">
+                                    <img src="./assets/img/research/thumbnails/MainAutoCtrl.png" alt="..." width="400" height="560" />
+                                    <div class="overlay">
+                                        <div class="research-hover-text">CLICK ME</div>
+                                    </div>
+                                </div>
                             </a>
                             <div class="portfolio-caption">
                                 <center>
-                                    <div class="portfolio-caption-heading">Fault-Tolerant Routing in Dynamic Environments</div>
-                                    <!-- <div class="portfolio-caption-subheading text-muted">based on Learning Patterns</div> -->
+                                    <div class="portfolio-caption-heading"> 
+                                     <h6> AUTONOMOUS DECISION-MAKING UNDER SYSTEM & ENVIRONMENT UNCERTAINTIES</h6>
+                                </div>
                                 </center>
                             </div>
                         </div>
                     </div>
 
+
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Project -->
+                        <!-- Project MAJOR CATEGORY 2 -->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolio-FDDG">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="./assets/img/research/feedbackthumb.png" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <center>
-                                    <div class="portfolio-caption-heading">Biology-Inspired Distributed Target-Tracking</div>
-                                    <!-- <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
-                                </center>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Project -->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal-TrafficMgmt">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="research-hover">
+                                    <img src="./assets/img/research/thumbnails/FDDG.png" alt="..." width="400" height="560" />
+                                    <div class="overlay">
+                                        <div class="research-hover-text">CLICK ME</div>
+                                    </div>
                                 </div>
-                                <img class="img-fluid" src="./assets/img/research/trafficthumb.png" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <center>
-                                    <div class="portfolio-caption-heading">Large-Scale Traffic Congestion Control</div>
-                                    <!-- <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
+                                    <div class="portfolio-caption-heading">
+                                        <h6> FAST, ANTI-REDUNDANT SITUATIONAL AWARENESS FOR LARGE ENVIRONMENTS </h6>
+                                    </div>
                                 </center>
                             </div>
                         </div>
@@ -145,56 +148,25 @@
 
 
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Project -->
+                        <!-- Project: MAJOR CATEGORY 3 -->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal-Tessellation">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal-TaskSimAI">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="./assets/img/research/tessellation.png" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <center>
-                                    <div class="portfolio-caption-heading">Topology of Multi-Agent Systems</div>
-                                    <!-- <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
-                                </center>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Project -->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal-HetMemory">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="research-hover">
+                                    <img src="./assets/img/research/thumbnails/TaskSimAI.png" alt="..." width="400" height="560" />
+                                    <div class="overlay">
+                                        <div class="research-hover-text">CLICK ME</div>
+                                    </div>
                                 </div>
-                                <img class="img-fluid" src="./assets/img/research/hetmemory.png" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <center>
-                                    <div class="portfolio-caption-heading">Heterogeneous Memory for Decision-Making</div>
-                                    <!-- <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
-                                </center>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Project: PLMP -->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal-PLMP">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="./assets/img/research/plp_plmp.png" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <center>
-                                    <div class="portfolio-caption-heading">Controller Architectures via Learning Patterns</div>
-                                    <!-- <div class="portfolio-caption-subheading text-muted">based on Learning Patterns</div> -->
+                                    <div class="portfolio-caption-heading">
+                                        <h6> SAMPLE- & MEMORY-EFFICIENT LEARNING FOR MULTI-TASK DECISION-MAKING
+                                        </h6>
+                                    </div>
                                 </center>
                             </div>
                         </div>
@@ -203,6 +175,9 @@
                 </div>
             </div>
         </section>
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 
         <!-- Publications-->
         <section class="page-section" id="publications">
@@ -233,9 +208,6 @@
                         <li> Hyeongmin Choe, SooJean Han, "<i>Quantifying the Advantage of Feedback-Structured Distributed Data-Gathering for Accurate and Efficient State-Estimation.</i>" Under review, American Controls Conference (ACC), Oct 2024.
                         </li><br>
 
-                        <!-- <li> Jungyo Jung, SooJean Han, "<i>Predictive Switching Mode Control for Quadrotors with Fault Tolerance Against Rotor Failures.</i>" Under review, American Controls Conference (ACC), Oct 2024.
-                        </li><br> -->
-
                         <li> SooJean Han*, Minwoo Kim*, Ieun Choo, "<i>A Stochastic Robust Adaptive Systems Level Approach to Stabilizing Large-Scale Uncertain Markovian Jump Linear Systems.</i>" IEEE Conference on Decision and Control (CDC), Sep 2024. [<a href="https://ieeexplore.ieee.org/document/10886289">PDF</a>]
                         </li><br>
                         
@@ -247,25 +219,12 @@
 
                         <li> SooJean Han, Soon-Jo Chung, "<i>Incremental Nonlinear Stability Analysis for Stochastic Systems Perturbed by L&eacute;vy Noise.</i>" International Journal of Robust and Nonlinear Control, vol. 32, no. 12, p. 7174-7201, Aug 2022. [<a href="https://onlinelibrary.wiley.com/doi/10.1002/rnc.6216">Link</a>] [<a href="https://arxiv.org/pdf/2103.13338.pdf">PDF</a>]
                         </li><br>
-
-                        <!-- <li> SooJean Han, Michelle Effros, Richard Murray, "<i>OUTformation: Distributed Data Gathering with Feedback under Unknown Environment and Communication Delay Constraints.</i>" ArXiv, Aug 2022. [<a href="https://arxiv.org/pdf/2208.06395.pdf">PDF</a>]
-                        </li><br> -->
-
-                        <!-- <li> SooJean Han, "<i>Localized Learning of Robust Controllers for Networked Systems with Dynamic Topology.</i>" Learning for Dynamics and Control Conference (L4DC), Jun 2020. [<a href="http://proceedings.mlr.press/v120/han20a/han20a.pdf">PDF</a>] </li><br> -->
-
-                        <!-- <li> Shih-Hao Tseng, <b>SooJean Han</b>, Adam Wierman, "Trading Throughput for Freshness: Freshness-Aware Traffic Engineering and In-Network Freshness Control." ACM Transactions on Modeling and Performance Evaluation of Computing Systems (ToMPECS), vol. 8, no. 4, p. 1-26, Mar 2023. [<a href="https://dl.acm.org/doi/abs/10.1145/3576919">PDF</a>]
-                        </li><br> -->
-
-                        <!-- <li> Shih-Hao Tseng, Carmen Amo Alonso, <b>SooJean Han</b>, "System Level Synthesis via Dynamic Programming." 59th IEEE Conference on Decision and Control (CDC), Dec 2020. [<a href="https://ieeexplore.ieee.org/document/9304369">PDF</a>] </li><br> -->
-
-                        <!-- <li> Mo Chen*, Sylvia L. Herbert*, Haimin Hu, Ye Pu, Jaime F. Fisac, Somil Bansal, <b>SooJean Han</b>, Claire J. Tomlin, "FaSTrack: a Modular Framework for Real-Time Motion Planning and Guaranteed Safe Tracking." IEEE Transactions on Automatic Control, vol. 66, no. 12, p. 5861-5876, Dec 2021. [<a href="https://ieeexplore.ieee.org/document/9354964">PDF</a>] </li> -->
-
-                        <!-- <li> Sylvia Herbert*, Mo Chen*, <b>SooJean Han</b>, Somil Bansal, Jaime F. Fisac, and Claire J .Tomlin, "FaSTrack: a Modular Framework for Fast and Guaranteed Safe Motion Planning." 56th IEEE Conference on Decision and Control (CDC), Dec 2017. [<a href="https://ieeexplore.ieee.org/document/8263867">PDF</a>] </li> -->
                     </ol> 
                 </div>
             </div>
         </section>
 
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         
         <!-- Team-->
         <section class="page-section bg-light" id="team">
@@ -402,16 +361,7 @@
                     <h3 class="section-heading text-uppercase">Research Interns | 연구인턴</h3>
                 </div>
 
-                <div class="row">
-                    <!-- <div class="col-lg-2">
-                        <div class="team-member">
-                            mx-auto
-                            <img class="rounded-circle-alt" src="./assets/img/team/interns/junhoyang.jpg" alt="..." />
-                            <h6>Junho Yang (양준호)</h6>
-                        </div>
-                    </div> -->
-
-                   
+                <div class="row">                   
                     <div class="col-lg-2">
                         <div class="team-member">
                             <img class="rounded-circle-alt" src="./assets/img/team/interns/abbasovnijat.jpeg" alt="..." />
@@ -435,56 +385,45 @@
                             <!-- <p class="text-muted">Incoming Spring 2025</p> -->
                         </div>
                     </div>
-
-                    <!-- <div class="col-lg-2">
-                        <div class="team-member">
-                            <img class="rounded-circle-alt" src="./assets/img/team/interns/leeseungeon.jpg" alt="..." />
-                            <h6>SeungEon Lee (이승언)</h6>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="col-lg-2">
-                        <div class="team-member">
-                            <img class="rounded-circle-alt" src="./assets/img/team/interns/parkjiwoo.JPG" alt="..." />
-                            <h6>Jiwoo Park (박지우)</h6>
-                        </div>
-                    </div> -->
                 </div>
 
-                <div class="text-center">
+                <!-- <div class="text-center"> -->
                     <!-- <h2 class="section-heading text-uppercase">Team | 연구</h2> -->
-                    <h3 class="section-subheading text-muted">Past Affiliates</h3>
-                </div>
+                    <!-- <h3 class="section-subheading text-muted">Past Affiliates</h3> -->
+                <!-- </div> -->
 
-                <div class="blurb">
-                    <ul>
+                <!-- <div class="blurb"> -->
+                    <!-- <ul>
                         <li> <b>SeungEon Lee (이승언)</b>. Undergraduate Intern. </li>
                         <li> <b>Jiwoo Park (박지우)</b>. Undergraduate Intern. </li>
-                        <li> <b>Sanghyun Lee (이상현)</b>. Undergraduate Intern. </li>
+                        <li> <b>Sanghyun Lee (이상현)</b>. Undergraduate Intern. </li> -->
                         <!-- <li> <b> Yejun Jang (장예준)</b>. Undergraduate Intern. [<a href="https://www.linkedin.com/in/yejun-jang-75373221a/">LinkedIn</a>] </li> -->
-                        <li> <b> Jerry Song (송제리)</b>. Undergraduate Intern. </li>
+                        <!-- <li> <b> Jerry Song (송제리)</b>. Undergraduate Intern. </li>
                         <li> <b>Seongjun Mun (문성준)</b>. Undergraduate Intern. </li>
-                    </ul>
-                </div>
+                    </ul> -->
+                <!-- </div> -->
 
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-8 mx-auto text-center">
                         <p class="large text-muted" style="margin-top:1cm;">If you are interested in joining our team, please email me at <a href="mailto:soojean@kaist.ac.kr">soojean@kaist.ac.kr</a> <br/>
                         연구실에 관심있는 박사/석사/학부생들은 이메일을 보내주세요: <a href="mailto:soojean@kaist.ac.kr">soojean@kaist.ac.kr</a>
                         </p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
 
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+
         <!-- CONTACT US section: once entire lab email account is set up. -->
 
 
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- RESEARCH PROJECT POP-UP MODALS-->
 
-        <!-- Project: UAVPathPlan modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal-UAVPathPlan" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Project: MainAutoCtrl modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal-MainAutoCtrl" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="./assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -493,145 +432,90 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h3 class="text-uppercase">Fault-Tolerant Routing in Complex Environments</h3>
-
-                                    <!-- <p class="item-intro text-muted"> <u>Main Idea</u>: With the rise in popularity of UAVs as a means of algorithms for robust and adaptive planning are becoming important.
-                                    </p> -->
-
-                                    <center>
-                                        <video width="500" controls autoplay loop>
-                                          <source src="./assets/img/research/path_planning.mp4" type="video/mp4">
-                                          Your browser does not support this video.
-                                        </video> 
-
-                                        <img class="img-fluid d-block mx-auto" src="./assets/img/research/dronefaulttol.png" alt="..." />
-                                    </center>
-                                </div>
-                                
-                                <div class="content" align="left">
-                                    <p>
-                                        We build a class of algorithms for hybrid UAV traffic, with special focus on minimum-curvature routing (see video above), congestion relief, multimodal transportation, and path-planning in complex environments.
-                                        Key applications include human transportation services (e.g., taxis, Ubers, flying ambulances) and remote package deliveries, where fast and efficient trajectory planning, robustness to nonstationary environments, and the ability to traverse harder-to-reach areas (e.g., mountains) are crucial.
-                                    </p>
-
-                                    <!-- <p style="margin-bottom:0.5cm;"> <u>Representative work(s):</u></p>
-                                    <ul>
-                                      <li> SooJean Han, Soon-Jo Chung, Johanna Gustafson, "Congestion Control of Vehicle Traffic Networks by Learning Structural and Temporal Patterns." L4DC, 2023</li>
-                                    </ul> -->
-                                </div>
-                                    
-                                <div class="modal-body">
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Project: PLMP modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal-PLMP" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="./assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Project details-->
-                                <div class="modal-body">
-                                    <h3 class="text-uppercase">Controller Architectures based on Learning Patterns</h3>
-                                    
-                                    <p class="item-intro text-muted"><u>Main Idea</u>: Identifying and using patterns in systems can enable a combination of model-based and model-free methods for decision-making which are more efficient in data consumption and computation time.</p>
-                                    
-                                    <img class="img-fluid d-block mx-auto" src="./assets/img/research/plp_plmp.png" alt="..." />
-                                </div>
-                                
-                                <div class="content" align="left">
-                                    <p style="margin-bottom:0.5cm;">We study and improve the tradeoff between model-free (data-driven) methods and model-based methods of stochastic control and estimation.</p>
-
-                                    <ul>
-                                        <li> <strong>Model-free control methods</strong> can generalize better to a variety of complex stochastic systems (e.g., via neural networks), at the cost of intensive data consumption and training time.</li>
-
-                                        <li> <strong>Model-based control methods</strong> may require less data and training (due to being characterized by explicit models), at the cost of being reliant on simplifying assumptions.</li>
-                                    </ul>
-
-                                    <p> For example, stochastic model-based controllers typically assume the random process can be modeled using Gaussian distributions, and Gaussian white noise models, such as linear quadratic Gaussian (LQG) control and Kalman filtering, have been shown to work well in practice for many applications.
-                                    However, they cannot be used to model impulsive jump perturbations such as wind gusts, large proprioceptive errors, sudden path deviations due to obstacle collisions, etc.
-                                    While model-free methods could be used to learn the jump dynamics as a black box, a more efficient process would be to try Poisson and L&eacute;vy processes as candidate models, and augment from there.
-                                    </p>
-
-                                    <center>
-                                        <img width="500" class="img-fluid d-block mx-auto" src="./assets/img/research/jump_examples.png" alt="..." />
-                                    </center>
-
-                                    <p> Motivated by this, we identify and use patterns to develop autonomous control and estimation algorithms that are more efficient in data consumption and computation time. </p>
-
-                                    <p style="margin-bottom:0.5cm;"> <u>Representative work(s):</u></p>
-                                    <ul>
-                                        <li> SooJean Han, Soon-Jo Chung, John C. Doyle, "Predictive Control of Linear Discrete-Time Markovian Jump Systems by Learning Recurrent Patterns." Automatica, 2023.</li>
-
-                                        <li> SooJean Han, Soon-Jo Chung, "Incremental Nonlinear Stability Analysis for Stochastic Systems Perturbed by L&eacute;vy Noise." International Journal of Robust and Nonlinear Control, 2022.</li>
-                                    </ul> 
-                                </div>
-                                    
-                                <div class="modal-body">
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
+                                    <h3 class="text-uppercase">Autonomous Decision-Making under System & Environment Uncertainties</h3>
                                 </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                                <!-- TBD: representative image for whole category -->
 
+                                <div class="container-color">
+                                    <div class="content" align="left">
+                                        <div class="container-color-title">
+                                            <h4 class="section-subheading text-muted" align="center"> <u>PROJECT</u>: Real-time Generative AI Motion-Planning with Safety Guarantees </h4>
+                                        </div>
 
-        <!-- Project 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal-TrafficMgmt" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="./assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h3 class="text-uppercase">Large-Scale Traffic Congestion Control</h3>
+                                        <p class="item-intro"> 
+                                            <b><u>Broad Problem</u></b>: End-to-end real-time motion planning and control of autonomous agents via generative AI.
 
-                                    <p class="item-intro text-muted"> <u>Main Idea</u>: In urban traffic control, there are natural patterns over space and time that can be learned and used to improve congestion-control algorithms.</p>
+                                            <br>
+                                            <b><u>Key Challenges</u></b>: Motion trajectories that satisfy fundamental constraints and guarantees (e.g., safety, stability, collision-avoidance) are difficult to generate with AI methods, especially while making it computationally efficient enough to run in real-time.
 
-                                    <center>
-                                        <img class="img-fluid d-block mx-auto" src="./assets/img/research/intersection.png" alt="..." />
+                                            <br>
+                                            <b><u>Research Goal</u></b>: Develop planning algorithms for autonomous agents in various complex scenarios while maintaining fundamental constraints and guarantees (e.g., safety, stability, collision-avoidance), by combining both generative AI and traditional planning methods.
 
-                                        <video width="700" controls autoplay loop>
-                                          <source src="./assets/img/research/plmp_vehicles.mp4" type="video/mp4">
-                                          Your browser does not support this video.
-                                        </video> 
-                                    </center>
+                                            <br>
+                                            <b><u>Application Areas</u></b>: Robotics; Autonomous driving; Wheeled mobile robots; Robot Arm Manipulation.</p>
+                                    </div>
                                 </div>
-                                
-                                <div class="content" align="left">
-                                    <p>
-                                        We study and extend reinforcement learning methods by learning patterns in vehicle traffic congestion control.
-                                        Intuitively, spatial symmetries arise from the rectangular, grid-like structure of the network, while temporal symmetries arise from both the structure and from human routines, e.g., commute times.
-                                        We develop an extension of <i>episodic control</i> that builds equivalence classes to group together patterns which are considered "similar" to each other, hereby saving memory consumption.
-                                        Although the specific application of focus so far has been on traffic congestion control, our goal is to develop this framework to be able to be used in other similar network control applications which can be solved using reinforcement learning methods.
-                                    </p>
 
-                                    <p style="margin-bottom:0.5cm;"> <u>Representative work(s):</u></p>
-                                    <ul>
-                                      <li> SooJean Han, Soon-Jo Chung, Johanna Gustafson, "Congestion Control of Vehicle Traffic Networks by Learning Structural and Temporal Patterns." L4DC, 2023</li>
 
-                                      <li> Mukul Chodhary, Kevin Octavian, SooJean Han, "Efficient Replay Memory Architectures in Multi-Agent Reinforcement Learning for Network Congestion Control." Under review ICML, Feb 2024.</li>
-                                    </ul> 
+                                <div class="container-color-alt">
+                                    <div class="content" align="left">
+                                        <div class="container-color-title">
+                                            <h4 class="section-subheading text-muted" align="center"> <u>PROJECT</u>: Robust & Adaptive Motion-Planning with Uncertainty Quantification </h4>
+                                        </div>
+
+                                        <p class="item-intro"> 
+                                            <b><u>Broad Problem</u></b>: Real-time control and state-estimation of autonomous agents experiencing stochastic effects, such as external environment uncertainties and unmodeled dynamics.
+
+                                            <br>
+                                            <b><u>Key Challenges</u></b>: When the stochastic effects are nonstationary (e.g., highly-dynamic environments, interaction-aware planning), many stochastic control and state-estimation algorithms can experience poor adaptability and lack of robustness.
+
+                                            <br>
+                                            <b><u>Research Goal</u></b>: Develop stochastic control and state-estimation algorithms for autonomous agents that are robust and adaptive even in scenarios with nonstationary uncertainties, by combining both model-based and data-driven methods.
+
+                                            <br>
+                                            <b><u>Application Areas</u></b>: Fault-Tolerant Systems; Robotics; Autonomous driving; Wheeled mobile robots; Drones; UAVs; Robot Arm Manipulation.</p>
+                                    </div>
+                                </div>
+
+                                <div class="container-color">
+                                    <div class="content" align="left">
+                                        <div class="container-color-title">
+                                            <h4 class="section-subheading text-muted" align="center"> <u>PROJECT</u>: Robust & Adaptive Control, Estimation for Large-Scale Stochastic Systems </h4>
+                                        </div>
+
+                                        <p class="item-intro"> 
+                                            <b><u>Broad Problem</u></b>: Large-scale, distributed or decentralized control and state-estimation for networks experiencing stochastic effects, such as external environment uncertainties and unmodeled dynamics.
+
+                                            <br>
+                                            <b><u>Key Challenges</u></b>: Scalable implementations of stochastic control and state-estimation algorithms introduce additional uncertainties (e.g., dynamic graph topology, delayed information transmission among agents) and additional constraints (e.g., limited communication bandwidth, global coordination among agents).
+
+                                            <br>
+                                            <b><u>Research Goal</u></b>: Develop distributed/decentralized stochastic control and state-estimation algorithms for large-scale systems that are robust, adaptive, and scalable (i.e., localizable) to high-dimensional network uncertainties.
+
+                                            <br>
+                                            <b><u>Application Areas</u></b>: Multi-Agent Systems; Large-Scale Networks; Fault-Tolerant Systems; Power Grid; Vehicle Traffic Grid; Sensor Networks.</p>
+                                    </div>
+                                </div>
+
+                                <div class="container-color-alt">
+                                    <div class="content" align="left">
+                                        <div class="container-color-title">
+                                            <h4 class="section-subheading text-muted" align="center"> <u>PROJECT</u>: Adaptive, Sequential Resource Allocation for Uncertain Datastreams</h4>
+                                        </div>
+
+                                        <p class="item-intro"> 
+                                            <b><u>Broad Problem</u></b>: Dynamic, real-time autonomous resource allocation in sequential data stream settings.
+
+                                            <br>
+                                            <b><u>Key Challenges</u></b>: When the distribution of the data stream is uncertain or unknown, many automated resource allocation systems can be very inaccurate in determining the criteria for allocating resources per job.
+
+                                            <br>
+                                            <b><u>Research Goal</u></b>: Develop robust and adaptive resource allocation and control algorithms that are robust and adaptive to highly uncertain sequential data streams, by combining both model-based and data-driven methods.
+
+                                            <br>
+                                            <b><u>Application Areas</u></b>: Time-series Data Processing; Stochastic Approximation; Queueing Systems; Finance; Online Content Moderation.</p>
+                                    </div>
                                 </div>
                                     
                                 <div class="modal-body">
@@ -649,93 +533,7 @@
 
 
 
-        <!-- Project 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal-Tessellation" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="./assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h3 class="text-uppercase">Topology of Multi-Agent Systems</h3>
-
-                                    <p class="item-intro text-muted"> <u>Main Idea</u>: We determine ways to abstract the topology of complex real-world networks into spatial patterns (e.g., tessellations) in order to achieve more intelligent network control. </p>
-
-                                    <img class="img-fluid d-block mx-auto" src="./assets/img/research/tessellation.png" alt="..." />
-                                </div>
-                                
-                                <div class="content" align="left">
-                                    <center>
-                                        <img class="img-fluid d-block mx-auto" src="./assets/img/research/topology.png" alt="..." />
-                                    </center>
-
-                                    <p>
-                                        <!-- One existing example of topology-abstraction is in aircraft piloting, where wind-optimal trajectories are computed by partitioning the continuous airspace into a discrete graph, along which flight trajectories are computed. -->
-                                        The goal is to achieve more intelligent network control, including faster communication, more optimal resource allocation, etc. 
-                                        Our approach is motivated by the fact that patterns and simple structures have properties that can be mathematically analyzed. 
-                                        For example, closed-form expressions for quantities (e.g., average hitting time, mean minimum commute time) can be derived for random walks over specific graph topologies (e.g., tree, star, ring, etc.). 
-                                        <!-- Recently, in machine learning, group theory has been used to develop equivariant and invariant architectures for neural networks. -->
-                                        Applications include the control of large-scale flow networks, where the goal is to maintain low congestion and high throughput. 
-                                        We are particularly interested in vehicle congestion control, air traffic management, and formation-flight of UAVs.
-                                    </p>
-                                </div>
-                                    
-                                <div class="modal-body">
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Project 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal-HetMemory" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="./assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h3 class="text-uppercase">Heterogeneous Memory for Decision-Making</h3>
-
-                                    <p class="item-intro text-muted"> <u>Main Idea</u>: We determine ways to address the well-known sample inefficiency problem of learning-based control algorithms by using diverse combinations of memory. </p>
-
-                                    <img class="img-fluid d-block mx-auto" src="./assets/img/research/hetmemory.png" alt="..." />
-                                </div>
-                                
-                                <div class="content" align="left">
-                                    <p>
-                                        Some common methods of implementing memory for control include experience replay buffers (in reinforcement learning/RL), and neural episodic control. However, many methods build their memories using simple structures, e.g., hash tables. This means each new experience is stored as a new entry, potentially leading to large memory consumption.
-                                        We study the patterns of a system, then develop smarter rules for determining what to store in memory and how to store them. By taking inspiration from the human brain, we design heterogeneous memory structures that encode information in a diversity of ways (e.g., semantic versus episodic memory). 
-                                        Applications include autonomous decision-making algorithms for robotic systems and other reinforcement learning problems. 
-                                    </p>
-                                </div>
-                                    
-                                <div class="modal-body">
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Project 5 modal popup-->
+        <!-- Project: FDDG modal popup-->
         <div class="portfolio-modal modal fade" id="portfolio-FDDG" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -745,41 +543,60 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h3 class="text-uppercase">Biology-Inspired Distributed Target-Tracking</h3>
-
-                                    <p class="item-intro text-muted"> <u>Main Idea</u>: We take inspiration from the human nervous system to improve methods for filtering and estimation in large-scale sensor networks. </p>
-
-                                    <!-- <img class="img-fluid d-block mx-auto" src="./assets/img/research/feedback.png" alt="..." /> -->
+                                    <h3 class="text-uppercase">Fast, Anti-Redundant Situational Awareness for Large Environments</h3>
                                 </div>
-                                
-                                <div class="content" align="left">
-                                    <center>
-                                        <video width="500" controls autoplay loop>
-                                          <source src="./assets/img/research/fddg_targettrack2.mp4" type="video/mp4">
+
+                                <!-- TBD: representative image for whole category -->
+                                <!-- <div class="content" align="left"> -->
+                                    <!-- <center> -->
+                                        <!-- <video width="500" controls autoplay loop>
+                                          <source src="./assets/img/research/tbd.mp4" type="video/mp4">
                                           Your browser does not support this video.
-                                        </video> 
+                                        </video>  -->
 
-                                        <img class="img-fluid d-block mx-auto" src="./assets/img/research/feedback_traffic.png" alt="..." />
-                                    </center>
+                                        <!-- <img class="img-fluid d-block mx-auto" src="./assets/img/research/tbd.png" alt="..." /> -->
+                                    <!-- </center> -->
+                                <!-- </div> -->
 
-                                    <p> 
-                                        Conventional architectures for distributed data-gathering tend to rely on the external sensors to transmit all their observations to the processor, including redundant information. 
-                                        This causes problems with high bandwidth consumption, congestion, latency, and outdated data. 
-                                        We take inspiration from the human nervous system to improve these algorithms: predictions are computed and fed back to the individual sensors. 
-                                        Each sensor now only needs to transmit the unknown part of their recent observations back to the processor.
-                                        Efficient wireless communication and information-gathering strategies are relevant for applications where multiple rovers and aerial drones must perform environment surveillance, mapping, and target-tracking over the surface of unknown planet terrains.
-                                    </p>
+                                <div class="container-color">
+                                    <div class="content" align="left">
+                                        <div class="container-color-title">
+                                            <h4 class="section-subheading text-muted" align="center"> <u>PROJECT</u>: Large Environment Situational Awareness with Wireless Sensor Networks</h4>
+                                        </div>
 
-                                    <center>
-                                        <img class="img-fluid d-block mx-auto" src="./assets/img/research/feedback.png" alt="..." />
-                                        <!-- <img class="img-fluid d-block mx-auto" src="./assets/img/research/feedback_mars.png" alt="..." /> -->
-                                        <!-- <img class="img-fluid d-block mx-auto" src="./assets/img/research/feedback_traffic.png" alt="..." /> -->
-                                    </center>
+                                        <p class="item-intro"> 
+                                            <b><u>Broad Problem</u></b>: Real-time situational awareness via state-estimation for large-scale environments via wireless sensor networks.
 
-                                    <!-- <p style="margin-bottom:0.5cm;"> <u>Representative work(s):</u></p>
-                                    <ul>
-                                      <li> SooJean Han, "Optimizing Accuracy and Efficiency in Distributed Data Gathering Architectures with Feedback." ArXiv, 2022.</li>
-                                    </ul>  -->
+                                            <br>
+                                            <b><u>Key Challenges</u></b>: In conventional distributed data-gathering networks, the external sensors transmit all their measurements to the decision-making central agent, thereby increasing traffic congestion and unnecessarily redundant communications.
+
+                                            <br>
+                                            <b><u>Research Goal</u></b>: Develop a modular distributed data-gathering architecture with <i>feedback communication</i> from the central decision-maker to the external sensors, with theoretical and empirical guarantees on attaining a more optimal balance of <i>efficiency</i> and <i>accuracy</i> compared to architectures without feedback.
+
+                                            <br>
+                                            <b><u>Application Areas</u></b>: Distributed Data-Gathering; Multi-Agent Systems; Multi-Target Tracking; Wireless Sensor Networks; Robotic Sensor Networks.</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="container-color-alt">
+                                    <div class="content" align="left">
+                                        <div class="container-color-title">
+                                            <h4 class="section-subheading text-muted" align="center"> <u>PROJECT</u>: Distributed, Scalable 3D Reconstruction over Wireless Visual Sensor Networks </h4>
+                                        </div>
+
+                                        <p class="item-intro"> 
+                                            <b><u>Broad Problem</u></b>: Real-time situational awareness via 3D environment reconstruction for large-scale environments via wireless visual sensor networks.
+
+                                            <br>
+                                            <b><u>Key Challenges</u></b>: Most 3D reconstruction tasks cannot be achieved on a wireless visual sensor network, due to problems including high computation and power demands for processing, large-bandwidth transmissions from large volumes of visual data, and reconstruction errors from asynchronous sensor updates.
+
+                                            <br>
+                                            <b><u>Research Goal</u></b>: Develop architectures for large-scale, distributed 3D reconstruction, with special focus on improving data preprocessing and transmission to optimally balance network efficiency and good reconstruction performance.
+
+                                            <br>
+                                            <b><u>Application Areas</u></b>: 3D Reconstruction; Vision; Multi-Agent Systems; Wireless Visual Sensor Networks; Robotic Sensor Networks.</p>
+                                    </div>
                                 </div>
                                     
                                 <div class="modal-body">
@@ -794,7 +611,113 @@
                 </div>
             </div>
         </div>
-        
+
+
+        <!-- Project: TaskSimAI modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal-TaskSimAI" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="./assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">Sample & Memory Efficient Learning for Multi-Task Decision-Making</h3>
+                                </div>
+
+                                <!-- TBD: representative image for whole category -->
+                                <!-- <div class="content" align="left"> -->
+                                    <!-- <center> -->
+                                        <!-- <video width="500" controls autoplay loop>
+                                          <source src="./assets/img/research/tbd.mp4" type="video/mp4">
+                                          Your browser does not support this video.
+                                        </video>  -->
+
+                                        <!-- <img class="img-fluid d-block mx-auto" src="./assets/img/research/tbd.png" alt="..." /> -->
+                                    <!-- </center> -->
+                                <!-- </div> -->
+
+                                <div class="container-color">
+                                    <div class="content" align="left">
+                                        <div class="container-color-title">
+                                            <h4 class="section-subheading text-muted" align="center"> <u>PROJECT</u>: Task Similarity Measures for Embodied AI & Continuous Control</h4>
+                                        </div>
+
+                                        <p class="item-intro"> 
+                                            <b><u>Broad Problem</u></b>: AGI for autonomous decision-making (e.g., embodied AI, continuous control) which adapts online to sequential tasks over time without catastrophically forgetting old tasks.
+
+                                            <br>
+                                            <b><u>Key Challenges</u></b>: Despite most real-world tasks containing repetitive structures or similar task patterns, many current AGI models retrain the existing model, making it sample- and memory-inefficient.
+
+                                            <br>
+                                            <b><u>Research Goal</u></b>: Develop theoretical and empirical characterizations of “task similarity” which can be incorporated into the learning process of AGI agents for autonomous decision-making, enabling them to achieve a more optimal balance between stability and plasticity while maintaining better memory- and sample-efficiency.
+
+                                            <br>
+                                            <b><u>Application Areas</u></b>: Embodied AI; Continual Learning; Continuous Control; Robotics; Robot Arm Manipulation.</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="container-color-alt">
+                                    <div class="content" align="left">
+                                        <div class="container-color-title">
+                                            <h4 class="section-subheading text-muted" align="center"> <u>PROJECT</u>: Accelerated Adaptive Parameter Optimization by Learning Patterns </h4>
+                                        </div>
+
+                                        <p class="item-intro"> 
+                                            <b><u>Broad Problem</u></b>: Adaptive parameter optimization methods in machine learning (e.g., neural network training), with special focus on online fine-tuning to sequential input data, accelerated convergence, and sparse gradients.
+
+                                            <br>
+                                            <b><u>Key Challenges</u></b>: Many adaptive parameter optimization methods do not take advantage of the fact that most real-world sequential tasks or input data streams contain exact or similar patterns (e.g., task-wise symmetries, loss landscape geometry), making them sample- and memory-inefficient.
+
+                                            <br>
+                                            <b><u>Research Goal</u></b>: Develop adaptive gradient descent and parameter optimization methods that leverage exact or similar patterns among tasks, allowing AGI agents to make sequential decisions faster between tasks while theoretically guaranteeing near-optimal convergence.
+
+                                            <br>
+                                            <b><u>Application Areas</u></b>: Optimization Methods in ML; Gradient Descent; Stochastic Approximation; Continual Learning; Continuous Control.</p>
+                                    </div>
+                                </div>
+
+                                <div class="container-color">
+                                    <div class="content" align="left">
+                                        <div class="container-color-title">
+                                            <h4 class="section-subheading text-muted" align="center"> <u>PROJECT</u>: Representation Learning by Classifying Patterns & Symmetries in Data</h4>
+                                        </div>
+
+                                        <p class="item-intro"> 
+                                            <b><u>Broad Problem</u></b>: Preprocessing of raw training/fine-tuning data via representation learning and feature encoding, to reduce the dimensionality of the agent’s task.
+
+                                            <br>
+                                            <b><u>Key Challenges</u></b>: Many encoders and representation learning methods are designed to leverage exact patterns (e.g., group equivariance, invariance), which can yield a rigid representation of the data, thereby causing poor generalization and a lack of robustness as the agent performs its task.
+
+                                            <br>
+                                            <b><u>Research Goal</u></b>: Develop feature encoders and representation learning methods that search for approximate patterns or patterns that are a mixture of exact patterns, thereby enhancing the performance of AGI agents for autonomous decision-making while maintaining memory- and sample-efficiency. 
+
+                                            <br>
+                                            <b><u>Application Areas</u></b>: Classification; Out-of-Distribution (OOD) Detection; Continual Learning; Continuous Control.</p>
+                                    </div>
+                                </div>
+                                    
+                                <div class="modal-body">
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+       
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 
         <!-- Footer-->
         <footer class="footer py-4">
@@ -802,15 +725,15 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start"> 
                         Autonomous Control for Stochastic Systems<br>
-                        School of Electrical Engineering, KAIST<br>
-                        291 Daehak-ro, Yuseong-gu, Daejeon 34141, Republic of Korea
+                        School of Electrical Engineering(E3-2), KAIST #2228<br>
+                        291 Daehak-ro, Yuseong-gu, Daejeon 34141, <br> Republic of Korea
                     </div>
 
                     <div class="col-lg-4 my-3 my-lg-0">
                     </div>
 
                     <div class="col-lg-4 text-lg-end">
-                        Last updated: Apr 2025. 
+                        Last updated: Jun 2025. 
                     </div>
                 </div>
             </div>

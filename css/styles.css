@@ -633,6 +633,7 @@ progress {
 }
 
 .container,
+.container-color,
 .container-fluid,
 .container-xxl,
 .container-xl,
@@ -646,6 +647,36 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+}
+.container-color {
+  border: 1px solid #e4f4f5; /* Replace #ccc with the color of your choice */
+  background-color: #e4f4f5;
+  padding-top: 20px; /* Add padding to the inside of the border */
+  padding-left: 20px; /* Add padding to the inside of the border */
+  padding-right: 20px; /* Add padding to the inside of the border */
+  padding-bottom: 5px; /* Add padding to the inside of the border */
+  margin-bottom: 50px; /* Add margin to the outside of the border */
+  border-radius: 25px;
+}
+.container-color-alt {
+  border: 1px solid #eaeaea; /* Replace #ccc with the color of your choice */
+  background-color: #eaeaea;
+  padding-top: 20px; /* Add padding to the inside of the border */
+  padding-left: 20px; /* Add padding to the inside of the border */
+  padding-right: 20px; /* Add padding to the inside of the border */
+  padding-bottom: 5px; /* Add padding to the inside of the border */
+  margin-bottom: 50px; /* Add margin to the outside of the border */
+  border-radius: 25px;
+}
+.container-color-title {
+  border: 1px solid #fafcfc; /* Replace #ccc with the color of your choice */
+  background-color: #fafcfc;
+  padding-top: 20px; /* Add padding to the inside of the border */
+  padding-left: 20px; /* Add padding to the inside of the border */
+  padding-right: 20px; /* Add padding to the inside of the border */
+  padding-bottom: 0px; /* Add padding to the inside of the border */
+  margin-bottom: 5px; /* Add margin to the outside of the border */
+  border-radius: 25px;
 }
 
 @media (min-width: 576px) {
@@ -670,6 +701,11 @@ progress {
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-color {
     max-width: 1320px;
   }
 }
@@ -1744,6 +1780,38 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
+
+.research-hover {
+  position: relative;
+  width: 96.3%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #92bac6;
+}
+.research-hover:hover .overlay {
+  opacity: 0.65;
+}
+.research-hover-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .table {
   --bs-table-color: var(--bs-body-color);
   --bs-table-bg: transparent;
