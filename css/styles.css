@@ -327,6 +327,212 @@ caption {
   text-align: left;
 }
 
+
+.project-tags {
+  margin-top: 8px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #333;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin: 2px;
+  font-weight: 500;
+}
+
+/* You can give each project tag its own color */
+/* You can give each project tag its own color */
+.tag-udm {
+  background-color: #C087D4;
+  color: white;
+}
+.tag-udm::before {
+  content: attr(data-label);
+}
+
+.tag-dmc {
+  background-color: #25B1F5;
+  color: white;
+}
+.tag-dmc::before {
+  content: attr(data-label);
+}
+
+.tag-robotics {
+  background-color: #BDBDBD; 
+  color: white;
+}
+.tag-robotics::before {
+  content: attr(data-label);
+}
+
+.tag-rl {
+  background-color: #827BAB; 
+  color: white;
+}
+.tag-rl::before {
+  content: attr(data-label); 
+}
+
+.tag-stochctrl {
+  background-color: #385FA8; 
+  color: white;
+}
+.tag-stochctrl::before {
+  content: attr(data-label);
+}
+
+.tag-safectrl {
+  background-color: #80B1D3; 
+  color: white;
+}
+.tag-safectrl::before {
+  content: attr(data-label);
+}
+
+.tag-uq {
+  background-color: #D9555B; 
+  color: white;
+}
+.tag-uq::before {
+  content: attr(data-label); 
+}
+
+.tag-adaptctrl {
+  background-color: #5DA2C2; 
+  color: white;
+}
+.tag-adaptctrl::before {
+  content: attr(data-label);
+}
+
+.tag-onlinelearn {
+  background-color: #B89FC2; 
+  color: white;
+}
+.tag-onlinelearn::before {
+  content: attr(data-label);
+}
+
+.tag-genAI {
+  background-color: #A449BA; 
+  color: white;
+}
+.tag-genAI::before {
+  content: attr(data-label);
+}
+
+.tag-dynamics {
+  background-color: #F962DB; 
+  color: white;
+}
+.tag-dynamics::before {
+  content: attr(data-label);
+}
+
+.tag-filter {
+  background-color: #FA992A; 
+  color: white;
+}
+.tag-filter::before {
+  content: attr(data-label);
+}
+
+.tag-motionplan {
+  background-color: #878787; 
+  color: white;
+}
+.tag-motionplan::before {
+  content: attr(data-label);
+}
+
+.tag-cv {
+  background-color: #E0C200; 
+  color: white;
+}
+.tag-cv::before {
+  content: attr(data-label); 
+}
+
+.tag-slt {
+  background-color: #478233; 
+  color: white;
+}
+.tag-slt::before {
+  content: attr(data-label);
+}
+
+/* Fallback: if no data-label is provided, use the project default */
+.tag-udm:not([data-label])::before { content: "UDM"; }
+.tag-dmc:not([data-label])::before { content: "DMC"; }
+.tag-robotics:not([data-label])::before { content: "Robot"; }
+.tag-rl:not([data-label])::before { content: "RL"; }
+.tag-stochctrl:not([data-label])::before { content: "StochCtrl"; }
+.tag-safectrl:not([data-label])::before { content: "SafeCtrl"; }
+.tag-uq:not([data-label])::before { content: "UQ"; }
+.tag-adaptctrl:not([data-label])::before { content: "AdaptCtrl"; }
+.tag-onlinelearn:not([data-label])::before { content: "OnLearn"; }
+.tag-genAI:not([data-label])::before { content: "GenModels"; }
+.tag-dynamics:not([data-label])::before { content: "Dynamics"; }
+.tag-filter:not([data-label])::before { content: "FilterEstim"; }
+.tag-motionplan:not([data-label])::before { content: "Planning"; }
+.tag-cv:not([data-label])::before { content: "CV"; }
+.tag-slt:not([data-label])::before { content: "SLT"; }
+
+
+.project-legend {
+  margin-top: 40px;
+}
+
+.project-legend h5 {
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Create three responsive columns */
+.project-legend ul {
+  list-style: none;
+  padding-left: 0;
+  column-count: 3;         /* splits into 3 columns */
+  column-gap: 40px;        /* spacing between columns */
+}
+
+.project-legend li {
+  break-inside: avoid;     /* prevents items from splitting between columns */
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 8px;
+}
+
+/* Ensure tags stay consistent in width/appearance */
+.project-legend .tag {
+  width: 90px;
+  text-align: center;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* Responsive fallback for smaller screens */
+@media (max-width: 992px) {
+  .project-legend ul {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-legend ul {
+    column-count: 1;
+  }
+}
+
+
+
 th {
   text-align: inherit;
   text-align: -webkit-match-parent;
