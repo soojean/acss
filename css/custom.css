@@ -1,0 +1,122 @@
+/* ACSS Lab custom overrides & components (keep small; everything else stays in agency.css) */
+
+/* 1) Constant colors */
+:root{
+  --bs-primary-rgb: #9bd8e7;
+  --bs-warning-rgb: #9bd8e7;
+  --bs-info-rgb: #9bd8e7;
+
+  --bs-link-color: #5272b4;
+  --bs-link-hover-color: #7ba6ff;
+
+  --bs-bg-box-color: #e4f4f5;
+  --bs-bg-box-color-alt: #eaeaea;
+  --bs-bg-box-color-title: #fafcfc;
+}
+
+
+/* 2) Research card "CLICK ME" overlay */
+.research-hover{ position: relative; width: 96.3%; }
+.research-hover .overlay{
+  position: absolute; inset: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #92bac6;
+}
+.research-hover:hover .overlay{ opacity: 0.65; }
+.research-hover-text{
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* 3) Project tag pills + legend */
+.project-tags{ margin-top: 8px; font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
+.tag{
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #333;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin: 2px;
+  font-weight: 500;
+}
+
+/* label text comes from data-label; fallback below handles when absent */
+.tag-udm{ background-color: #C087D4; color: #fff; }
+.tag-dmc{ background-color: #25B1F5; color: #fff; }
+.tag-robotics{ background-color: #ADADAD; color: #fff; }
+.tag-rl{ background-color: #827BAB; color: #fff; }
+.tag-stochctrl{ background-color: #385FA8; color: #fff; }
+.tag-safectrl{ background-color: #80B1D3; color: #fff; }
+.tag-uq{ background-color: #D9555B; color: #fff; }
+.tag-adaptctrl{ background-color: #5DA2C2; color: #fff; }
+.tag-onlinelearn{ background-color: #B89FC2; color: #fff; }
+.tag-genAI{ background-color: #A449BA; color: #fff; }
+.tag-dynamics{ background-color: #F962DB; color: #fff; }
+.tag-filter{ background-color: #FA992A; color: #fff; }
+.tag-motionplan{ background-color: #878787; color: #fff; }
+.tag-cv{ background-color: #E0C200; color: #fff; }
+.tag-slt{ background-color: #478233; color: #fff; }
+
+.tag-udm::before,
+.tag-dmc::before,
+.tag-robotics::before,
+.tag-rl::before,
+.tag-stochctrl::before,
+.tag-safectrl::before,
+.tag-uq::before,
+.tag-adaptctrl::before,
+.tag-onlinelearn::before,
+.tag-genAI::before,
+.tag-dynamics::before,
+.tag-filter::before,
+.tag-motionplan::before,
+.tag-cv::before,
+.tag-slt::before{ content: attr(data-label); }
+
+/* Fallback: if no data-label is provided, use the project default */
+.tag-udm:not([data-label])::before{ content: "UDM"; }
+.tag-dmc:not([data-label])::before{ content: "DMC"; }
+.tag-robotics:not([data-label])::before{ content: "Robot"; }
+.tag-rl:not([data-label])::before{ content: "RL"; }
+.tag-stochctrl:not([data-label])::before{ content: "StochCtrl"; }
+.tag-safectrl:not([data-label])::before{ content: "SafeCtrl"; }
+.tag-uq:not([data-label])::before{ content: "UQ"; }
+.tag-adaptctrl:not([data-label])::before{ content: "AdaptCtrl"; }
+.tag-onlinelearn:not([data-label])::before{ content: "OnLearn"; }
+.tag-genAI:not([data-label])::before{ content: "GenModels"; }
+.tag-dynamics:not([data-label])::before{ content: "Dynamics"; }
+.tag-filter:not([data-label])::before{ content: "FilterEstim"; }
+.tag-motionplan:not([data-label])::before{ content: "Planning"; }
+.tag-cv:not([data-label])::before{ content: "CV"; }
+.tag-slt:not([data-label])::before{ content: "SLT"; }
+
+
+/* 4) Publication blocks (your HTML uses .blurb but styles.css doesn't define it) */
+.blurb{ max-width: 980px; margin-left: auto; margin-right: auto; }
+.blurb ol{ padding-left: 1.25rem; }
+.blurb li{ line-height: 1.55; }
+
+
+/* 5) Colored containers (recommended: pair with Bootstrap .container in HTML) */
+.project-legend{ margin-top: 40px; }
+.project-legend h5{ font-weight: 600; margin-bottom: 40px; text-align: center; }
+.project-legend ul{ list-style: none; padding-left: 0; column-count: 3; column-gap: 40px; }
+.project-legend li{ break-inside: avoid; margin-bottom: 8px; display: flex; align-items: center; font-weight: 500; gap: 8px; }
+.project-legend .tag{ width: 90px; text-align: center; margin: 0; flex-shrink: 0; }
+
+.container-color,
+.container-color-alt,
+.container-color-title{
+  border-radius: 25px;
+}
+.container-color{ background-color: var(--bs-bg-box-color); border: 1px solid var(--bs-bg-box-color); padding: 20px 20px 5px; margin-bottom: 50px; }
+.container-color-alt{ background-color: var(--bs-bg-box-color-alt); border: 1px solid var(--bs-bg-box-color-alt); padding: 20px 20px 5px; margin-bottom: 50px; }
+.container-color-title{ background-color: var(--bs-bg-box-color-title); border: 1px solid var(--bs-bg-box-color-title); padding: 20px 20px 0; margin-bottom: 5px; }
+
